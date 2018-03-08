@@ -1,0 +1,454 @@
+{
+    "campaign": {
+        "name": "Pasta demo",
+        "active": true,
+        "banner": "https://scontent-lht6-1.xx.fbcdn.net/v/t31.0-8/28337131_1836339216439169_6631744233517851348_o.jpg?oh=4a1380eb6caf0e1aec154c5ba4daed41&oe=5B07413D",
+        "adId": "123456",
+        "companyName": "Sleepy monster",
+        "modules": [
+            {
+                "modId": 0,
+                "type": "text_msg",
+                "moduleName": "Welcome",
+                "text": "Welcome {FIRST_NAME}! We are happy to have you join this amazing journey 😀 🎉",
+                "immediatelyGoToNextModule": true
+            },
+            {
+                "modId": 1,
+                "type": "text_msg",
+                "text": "When you want quality pasta with natural ingredients trusted for generations in the UAE, Emirates Macaroni is what comes to mind. We're excited to introduce the new pasta line, for the whole family! 🕶️",
+                "immediatelyGoToNextModule": true
+            },
+            {
+                "modId": 2,
+                "typing": 3,
+                "type": "text_msg",
+                "text": "Apply for this brand experience and answer a few questions to get a free exclusive kit of Emirates Macaroni pasta that's not even on the shelves, and earn some bragging rights with your family and friends!",
+                "immediatelyGoToNextModule": true
+            },
+            {
+                "modId": 3,
+                "type": "text_msg",
+                "text": "If you're selected, here's what you'll get:",
+                "immediatelyGoToNextModule": true
+            },
+            {
+                "modId": 4,
+                "type": "text_msg",
+                "text": "2x Kids pasta",
+                "immediatelyGoToNextModule": true
+            },
+            {
+                "modId": 5,
+                "type": "text_msg",
+                "text": "2X pasta sauce (traditional and basil)",
+                "immediatelyGoToNextModule": true
+            },
+            {
+                "modId": 6,
+                "type": "text_msg",
+                "text": "1X Spaghetti",
+                "immediatelyGoToNextModule": true
+            },
+            {
+                "modId": 7,
+                "type": "text_msg",
+                "text": "1X Penne Regatti",
+                "immediatelyGoToNextModule": true
+            },
+            {
+                "modId": 8,
+                "type": "text_msg",
+                "text": "Gift for kids (Lunch Box)",
+                "immediatelyGoToNextModule": true
+            },
+            {
+                "modId": 9,
+                "type": "multiple_choice",
+                "text": "Pretty cool, right? 😍",
+                "choices": [
+                    {
+                        "text": "LET'S DO THIS!"
+                    }
+                ],
+                "required": false
+            },
+            {
+                "modId": 10,
+                "type": "multiple_choice",
+                "moduleName": "do you know the brand",
+                "text": "Do you know the Emirates Macaroni brand?",
+                "required": true,
+                "choices": [
+                    {
+                        "text": "Yes",
+                        "nextModule": 11
+                    },
+                    {
+                        "text": "No",
+                        "nextModule": 15
+                    }
+                ],
+                "errorResponse": "Sorry I didn't get that."
+            },
+            {
+                "modId": 11,
+                "type": "multiple_choice",
+                "text": "Do you use any of Emirates Macaroni's products?",
+                "choices": [
+                    {
+                        "text": "Yes",
+                        "nextModule": 12
+                    },
+                    {
+                        "text": "No",
+                        "nextModule": 14
+                    }
+                ]
+            },
+            {
+                "modId": 12,
+                "type": "multiple_choice",
+                "moduleName": "ratting",
+                "text": "How would you rate your experience with Emirates Macaroni? 1 being unpleasant 10 being amazing",
+                "choices": [
+                    {
+                        "text": "1"
+                    },
+                    {
+                        "text": "2"
+                    },
+                    {
+                        "text": "3"
+                    },
+                    {
+                        "text": "4"
+                    },
+                    {
+                        "text": "5"
+                    },
+                    {
+                        "text": "6"
+                    },
+                    {
+                        "text": "7"
+                    },
+                    {
+                        "text": "8"
+                    },
+                    {
+                        "text": "9"
+                    },
+                    {
+                        "text": "10"
+                    }
+                ],
+                "nextModule": 13
+            },
+            {
+                "modId": 13,
+                "type": "multiple_choice",
+                "moduleName": "How likely are you to recommend",
+                "text": "How likely are you to recommend Emirates Macaroni to friends & family? 1 being highly unlikely & 10 being highly likely",
+                "choices": [
+                    {
+                        "text": "1"
+                    },
+                    {
+                        "text": "2"
+                    },
+                    {
+                        "text": "3"
+                    },
+                    {
+                        "text": "4"
+                    },
+                    {
+                        "text": "5"
+                    },
+                    {
+                        "text": "6"
+                    },
+                    {
+                        "text": "7"
+                    },
+                    {
+                        "text": "8"
+                    },
+                    {
+                        "text": "9"
+                    },
+                    {
+                        "text": "10"
+                    }
+                ],
+                "nextModule": 15
+            },
+            {
+                "modId": 14,
+                "type": "text_question",
+                "text": "What's the brand of pasta you and your family eat the most at home?",
+                "moduleName": "current brand"
+            },
+            {
+                "modId": 15,
+                "type": "multiple_choice",
+                "moduleName": "What you are most concern about",
+                "text": "What's your main concern when it comes to buying pasta?",
+                "choices": [
+                    {
+                        "text": "a) 100% Semolina"
+                    },
+                    {
+                        "text": "b) GLUTEN Free"
+                    },
+                    {
+                        "text": "c) Natural"
+                    },
+                    {
+                        "text": "d) Brown"
+                    }
+                ],
+                "errorResponse": "Please select one of these."
+            },
+            {
+                "modId": 16,
+                "type": "multiple_choice",
+                "text": "How likely are you to purchase Emirates Macaroni products in the next 1 month? 1 being highly unlikely & 10 being highly likely.",
+                "choices": [
+                    {
+                        "text": "1"
+                    },
+                    {
+                        "text": "2"
+                    },
+                    {
+                        "text": "3"
+                    },
+                    {
+                        "text": "4"
+                    },
+                    {
+                        "text": "5"
+                    },
+                    {
+                        "text": "6"
+                    },
+                    {
+                        "text": "7"
+                    },
+                    {
+                        "text": "8"
+                    },
+                    {
+                        "text": "9"
+                    },
+                    {
+                        "text": "10"
+                    }
+                ]
+            },
+            {
+                "modId": 17,
+                "type": "multiple_choice",
+                "text": "What affects your purchase decision the most when it comes to buying Pasta products?",
+                "choices": [
+                    {
+                        "text": "Price"
+                    },
+                    {
+                        "text": "Brand Name"
+                    },
+                    {
+                        "text": "friends/family"
+                    },
+                    {
+                        "text": "Expert Recommendation"
+                    },
+                    {
+                        "text": "TV Ad"
+                    },
+                    {
+                        "text": "Trial (Sampling)"
+                    },
+                    {
+                        "text": "Other",
+                        "nextModule": 18
+                    }
+                ],
+                "nextModule": 19
+            },
+            {
+                "modId": 18,
+                "type": "text_question",
+                "text": "Please specify",
+                "moduleName": "What affects your purchase decision the most when it comes to buying Pasta products? OTHER"
+            },
+            {
+                "modId": 19,
+                "type": "multiple_choice",
+                "text": "If you're selected to win the Emirates Macaroni kit, are you willing to post images & comments on your Facebook page? This could include taking pictures of yourself, family members, friends, and locations. ",
+                "choices": [
+                    {
+                        "text": "Yes"
+                    },
+                    {
+                        "text": "No"
+                    }
+                ],
+                "moduleName": "publishing consent"
+            },
+            {
+                "modId": 20,
+                "type": "text_msg",
+                "text": "Thank you for providing us with the above answers, they are really useful!",
+                "immediatelyGoToNextModule": true
+            },
+            {
+                "modId": 21,
+                "type": "text_msg",
+                "text": "As a mom, we know you want your kids to eat foods with the most natural and healthy ingredients 🤗. And that's why we at Emirates Macaroni make our tricolor pasta with all natural colors: spinach 🌿 for green and tomatoes 🍅 for red.",
+                "immediatelyGoToNextModule": true
+            },
+            {
+                "modId": 22,
+                "type": "text_msg",
+                "text": "So no chemicals, food coloring, or unnatural ingredients. Only the Good Stuff in our pasta made of 100 % durum wheat SEMOLINA and water. 👌",
+                "immediatelyGoToNextModule": true
+            },
+            {
+                "modId": 23,
+                "type": "video",
+                "typing": 3,
+                "text": "Check out this video showing the goodness Emirates Macaroni has for kids and how eating pasta can be fun and nutritious!",
+                "videoURL": "https://www.w3schools.com/tags/movie.mp4",
+                "required": false,
+                "immediatelyGoToNextModule":true
+            },
+            {
+                "modId": 24,
+                "delay":15,
+                "text": "You may already know some of the benefits of pasta, but do you really know why? Check out this infographic and find out how pasta can give your child(ren) the healthy energy they need to keep their focus at school!",
+                "type": "image",
+                "imageURL": "https://scontent-lht6-1.xx.fbcdn.net/v/t31.0-8/28337131_1836339216439169_6631744233517851348_o.jpg?oh=4a1380eb6caf0e1aec154c5ba4daed41&oe=5B07413D",
+                "immediatelyGoToNextModule":true
+            },
+            {
+                "modId": 25,
+                "type": "multiple_choice",
+                "text": "If you liked what you saw and want to let your family & friends in on the health benefits of pasta for your kids then share this infographic. Do it for the love of macaroni!",
+                "choices": [
+                    {
+                        "text": "YES SURE!",
+                        "nextModule": 26
+                    },
+                    {
+                        "text": "Umm no..",
+                        "nextModule": 28
+                    }
+                ],
+                "errorResponse": "Sorry I didn't get that."
+            },
+            {
+                "modId": 26,
+                "type": "post_text",
+                "postName": "discovery",
+                "text": "Please type a message to include with the infographic, make sure you include this hashtag #pasta"
+            },
+            {
+                "modId": 27,
+                "type": "post_preview",
+                "postName": "discovery",
+                "text": "Preview before posting.",
+                "choices": [
+                    {
+                        "text": "Edit",
+                        "nextModule": 26
+                    },
+                    {
+                        "text": "cancel",
+                        "nextModule": 28
+                    }
+                ]
+            },
+            {
+                "modId": 28,
+                "type": "text_msg",
+                "text": "Good on you for getting this far! we will be reviewing your answers and letting you know very soon if you have been selected to receive the special kit and quality for the next step. stay tuned!",
+                "immediatelyGoToNextModule": true
+            },
+            {
+                "modId": 29,
+                "type": "await"
+            },
+            {
+                "modId": 30,
+                "type": "text_msg",
+                "text": "Congratulations!! you have been selected to get the special Emirates Macaroni free kit. 🎉 😍 We just need your address so we can ship it to you",
+                "immediatelyGoToNextModule": true
+            },
+            {
+                "modId": 31,
+                "type": "city",
+                "text": "Type your city"
+            },
+            {
+                "modId": 32,
+                "type": "mobile_number",
+                "text": "Type your Mobile number"
+            },
+            {
+                "modId": 33,
+                "type": "address_1",
+                "text": "Your address line 1:"
+            },
+            {
+                "modId": 34,
+                "type": "address_2",
+                "text": "Your address line 2:"
+            },
+
+            {
+                "modId":35,
+                "type":"pin_code",
+                "moduleName":"PIN code",
+                "text":"Type your PIN code.",
+                "errorResponse":"This is not a valid PIN code"
+              },{
+            
+                "modId":36,
+                "type": "address_preview",
+                "moduleName": "address preview",
+                "text":"Preview your shipment address",
+                "choices":[{
+                  "text":"Confirm"      
+                },{
+                  "text":"Edit",
+                  "nextModule":31
+                }]
+              }
+              ,{
+                "modId": 37,
+                "type": "text_msg",
+                "text": " Great! now all you have to do is sit tight and our delivery partner will be reaching out to you very soon to deliver your special kit! 🚚  🎁 ",
+                "immediatelyGoToNextModule": true
+            },
+            {
+                "modId": 38,
+                "type": "await"
+            },
+            {
+                "modId": 39,
+                "type": "text_msg",
+                "text": "Ah we're so sorry, it seems you did not make it to the next step. But hey! don't give up, we will be back soon with more competitions and cool stuff to do."
+            }
+        ],
+        "referralRef": "pasta_demo",
+        "discovery": {
+            "postType": "discovery",
+            "postText": "check this out",
+            "postAttachment": "https://scontent-lht6-1.xx.fbcdn.net/v/t31.0-8/28337131_1836339216439169_6631744233517851348_o.jpg?oh=4a1380eb6caf0e1aec154c5ba4daed41&oe=5B07413D"
+        },
+        "hashtag":"#pasta"
+    }
+}

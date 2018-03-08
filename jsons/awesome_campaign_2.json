@@ -1,0 +1,124 @@
+[ {
+    "modId": 0,
+    "type": "multiple_choice",
+    "moduleName": "are you familiar with product",
+    "text": "Are you familiar with product X",
+    "immediatelyGoToNextModule": false,
+    "choices": [{
+      "text": "Yes"
+    }, {
+      "text": "No"
+    }],
+    "errorResponse": "Please choose Yes or No"
+  },
+{
+    "modId": 1,
+    "type": "address_1",
+    "moduleName": "address line 1",
+    "text": "Please type your address line 1.",
+    "errorResponse":"Please type a valid address"
+  },
+  {
+    "modId": 2,
+    "type": "address_2",
+    "moduleName": "address line 2",
+    "text": "Please type your address line 2.",
+    "errorResponse":"Please type a valid address"
+  },
+  {
+    "modId":3,
+    "type":"pin_code",
+    "moduleName":"PIN code",
+    "text":"Type your PIN code.",
+    "errorResponse":"This is not a valid PIN code"
+  },{
+
+    "modId":4,
+    "type": "address_preview",
+    "moduleName": "address preview",
+    "text":"Preview your shipment address",
+    "choices":[{
+      "text":"Confirm"      
+    },{
+      "text":"Edit",
+      "nextModule":1
+    }]
+  }
+  ,{
+    "modId": 5,
+    "type": "image",
+    "moduleName": "fast car ",
+    "text":"whould you like to share this on your time line?",
+    "imageURL":"https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg",
+    "required":false,
+    "choices":[{
+        "text": "Yes"
+    },{
+      "text":"No",
+      "nextModule":8
+    }],
+    "errorResponse":"Sorry I didn't get that."
+  },{
+
+    "modId":6,
+    "type": "post_text",
+    "moduleName": "post text",
+    "postName":"discovery",
+    "text":"type a text to include with the image"
+  } ,{
+    "modId":7,
+    "type":"post_preview",
+    "postName":"discovery",
+    "text":"Preview your post before publishing",
+    "choices":[{
+      "text":"Edit",
+      "nextModule":4
+    },{
+      "text":"cancel",
+      "nextModule":7
+    }],
+    "errorResponse":"I didn't get that 🙄. Please chose one of these."
+  },
+  {
+    "modId":8,
+    "type":"carousel",
+    "text":"Check this carousel.",
+    "choices":[{
+      "text":"Very nice"
+    }],
+    "carouselElements":[{
+      "imageURL":"https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg",
+      "title":"car 1",
+      "subtitle":"Amazing",
+      "buttons":[{
+        "text":"Buy"
+      },{
+        "text":"More Details"
+      }]
+    },{
+      "imageURL":"https://images.pexels.com/photos/337909/pexels-photo-337909.jpeg",
+      "title":"car 1",
+      "subtitle":"Amazing",
+      "buttons":[{
+        "text":"Buy"
+      },{
+        "text":"More Details url",
+        "url":"https://google.com"
+      }]
+    },{
+      "imageURL":"https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg",
+      "title":"car 1",
+      "subtitle":"Amazing",
+      "buttons":[{
+        "text":"Buy"
+      },{
+        "text":"More Details"
+      }]
+    }]
+
+  },{
+    "modId":9,
+    "type":"text_msg",
+    "text":"Thanks Bye",
+    "moduleName":"last message"
+  }]
