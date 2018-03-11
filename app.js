@@ -10,15 +10,15 @@ var users = require('./routes/users');
 var hbs = require("./hbsEngine")
 var config = require("./config")
 const request = require("request-promise")
-mongoose.connect(config.DB_URL)
-var db = mongoose.connection;
-db.on('error', function(err){
+// mongoose.connect(config.DB_URL)
+// var db = mongoose.connection;
+// db.on('error', function(err){
 
-  console.log('error with db connection ', err)
-});
-db.once('open', function callback () {
-  console.log("h");
-});
+//   console.log('error with db connection ', err)
+// });
+// db.once('open', function callback () {
+//   console.log("h");
+// });
 
 var app = express();
 app.engine('hbs', hbs.engine)
